@@ -28,8 +28,8 @@ def __nop(ob):
 
 import sys 
 sys.path.append(os.getcwd()+'/src/rave')
-sys.path.append('/content/rwkv_mine/RWKVv5/src/rave')
-sys.path.append('/content/rwkv_mine/RWKVv5/src')
+sys.path.append('/content/multimodal_mine/audio_gesture_mine/src/rave')
+sys.path.append('/content/multimodal_mine/audio_gesture_mine/src')
 from rave.blocks import EncoderV2
 from mine import MultiscaleSequence_MINE
 from rave.pqmf import CachedPQMF
