@@ -946,6 +946,8 @@ class RWKV(pl.LightningModule):
         )
         m = {}
         for n in self.state_dict():
+            if 'encoder' in n or 'mine' in n:
+                continue
             p = self.state_dict()[n]
             shape = p.shape
 
